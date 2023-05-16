@@ -9,8 +9,8 @@ class Solution {
   public:
     string armstrongNumber(int n){
         // code here
-         int a=pow(n%10,3)+pow(n/10%10,3)+pow(n/100%10,3);
-         if(a==n)return "Yes";
+         
+         if(pow(n%10,3)+pow(n/10%10,3)+pow(n/100%10,3)==n)return "Yes";
          return "No";
     }
 };
